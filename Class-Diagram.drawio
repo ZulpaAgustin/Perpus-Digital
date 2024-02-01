@@ -1,35 +1,35 @@
-<mxfile host="app.diagrams.net" modified="2024-02-01T06:48:39.938Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="Pi5gfoXAEAWTA9mmnUag" version="23.1.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-01T06:50:33.999Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="TZp3DbeV5I8wHozbkg35" version="23.1.0" type="github">
   <diagram name="Page-1" id="OzblGMNQP7kjeC6ncjpZ">
     <mxGraphModel dx="1032" dy="494" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="7pk3-SOGmDkyq5R2XHhR-5" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="46" y="160" width="730" height="854" as="geometry" />
+          <mxGeometry x="46" y="90" width="730" height="924" as="geometry" />
         </mxCell>
         <mxCell id="7pk3-SOGmDkyq5R2XHhR-1" value="Buku" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="493" y="190" width="160" height="340" as="geometry" />
+          <mxGeometry x="493" y="140" width="160" height="390" as="geometry" />
         </mxCell>
-        <mxCell id="7pk3-SOGmDkyq5R2XHhR-2" value="id: int&lt;br&gt;&lt;br&gt;created_at: datetime&lt;br&gt;&lt;br&gt;judul: char&lt;br&gt;&lt;br&gt;penulis: char&lt;br&gt;&lt;br&gt;deskripsi: char&lt;br&gt;&lt;br&gt;tahun_terbit: char&lt;br&gt;&lt;br&gt;penerbit: char&lt;br&gt;&lt;br&gt;jumlah_halaman: int&lt;br&gt;&lt;br&gt;ISBN: int&lt;br&gt;&lt;br&gt;kategori: char&lt;br&gt;&lt;br&gt;rak: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="7pk3-SOGmDkyq5R2XHhR-1">
-          <mxGeometry y="26" width="160" height="254" as="geometry" />
+        <mxCell id="7pk3-SOGmDkyq5R2XHhR-2" value="id: int&lt;br&gt;&lt;br&gt;created_at: datetime&lt;br&gt;&lt;br&gt;judul: char&lt;br&gt;&lt;br&gt;penulis: char&lt;br&gt;&lt;br&gt;deskripsi: char&lt;br&gt;&lt;br&gt;tahun_terbit: char&lt;br&gt;&lt;br&gt;penerbit: char&lt;br&gt;&lt;br&gt;jumlah_halaman: int&lt;br&gt;&lt;br&gt;ISBN: int&lt;br&gt;&lt;br&gt;kategori: int(FK)&lt;br&gt;&lt;br&gt;rak: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="7pk3-SOGmDkyq5R2XHhR-1">
+          <mxGeometry y="26" width="160" height="304" as="geometry" />
         </mxCell>
         <mxCell id="7pk3-SOGmDkyq5R2XHhR-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="7pk3-SOGmDkyq5R2XHhR-1">
-          <mxGeometry y="280" width="160" height="8" as="geometry" />
+          <mxGeometry y="330" width="160" height="8" as="geometry" />
         </mxCell>
         <mxCell id="7pk3-SOGmDkyq5R2XHhR-4" value="tampilkan_buku()&lt;br&gt;&lt;br&gt;cari_buku()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="7pk3-SOGmDkyq5R2XHhR-1">
-          <mxGeometry y="288" width="160" height="52" as="geometry" />
+          <mxGeometry y="338" width="160" height="52" as="geometry" />
         </mxCell>
         <mxCell id="7pk3-SOGmDkyq5R2XHhR-6" value="Pengunjung" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="492" y="588" width="160" height="310" as="geometry" />
+          <mxGeometry x="492" y="588" width="160" height="340" as="geometry" />
         </mxCell>
-        <mxCell id="7pk3-SOGmDkyq5R2XHhR-7" value="id: int&lt;br&gt;&lt;br&gt;nama: char&lt;br&gt;&lt;br&gt;keanggotaan: char&lt;br&gt;&lt;br&gt;tingkat: int&lt;br&gt;&lt;br&gt;jurusan: char&lt;br&gt;&lt;br&gt;kelas: int&lt;br&gt;&lt;br&gt;tanggal: int&lt;br&gt;&lt;br&gt;waktu: int&lt;br&gt;&lt;br&gt;keperluan: char" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="7pk3-SOGmDkyq5R2XHhR-6">
-          <mxGeometry y="26" width="160" height="224" as="geometry" />
+        <mxCell id="7pk3-SOGmDkyq5R2XHhR-7" value="id: int&lt;br&gt;&lt;br&gt;nama: char&lt;br&gt;&lt;br&gt;keanggotaan: char&lt;br&gt;&lt;br&gt;tingkat: int&lt;br&gt;&lt;br&gt;jurusan: char&lt;br&gt;&lt;br&gt;kelas: int&lt;br&gt;&lt;br&gt;tanggal: int&lt;br&gt;&lt;br&gt;waktu: int&lt;br&gt;&lt;br&gt;keperluan: int(FK)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="7pk3-SOGmDkyq5R2XHhR-6">
+          <mxGeometry y="26" width="160" height="254" as="geometry" />
         </mxCell>
         <mxCell id="7pk3-SOGmDkyq5R2XHhR-8" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="7pk3-SOGmDkyq5R2XHhR-6">
-          <mxGeometry y="250" width="160" height="8" as="geometry" />
+          <mxGeometry y="280" width="160" height="8" as="geometry" />
         </mxCell>
         <mxCell id="7pk3-SOGmDkyq5R2XHhR-9" value="tampilkan()&lt;br&gt;&lt;br&gt;tambah()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="7pk3-SOGmDkyq5R2XHhR-6">
-          <mxGeometry y="258" width="160" height="52" as="geometry" />
+          <mxGeometry y="288" width="160" height="52" as="geometry" />
         </mxCell>
         <mxCell id="7pk3-SOGmDkyq5R2XHhR-10" value="&lt;i&gt;Kategori_Buku&lt;/i&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="171" y="241" width="160" height="144" as="geometry" />
