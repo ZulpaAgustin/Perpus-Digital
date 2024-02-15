@@ -1,9 +1,94 @@
-<mxfile host="app.diagrams.net" modified="2024-02-15T02:31:24.356Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" version="23.1.4" etag="gKMfH6DacHSZFgDR3BJX" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-15T03:30:28.522Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="vqumdlChRabKmZVmuJ8p" version="23.1.4" type="github">
   <diagram name="Page-1" id="1CsWSIOsd7DZvazxTq7q">
-    <mxGraphModel>
+    <mxGraphModel dx="1032" dy="1639" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="YH_PSnnOb5-2hyFmt0-1-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="-310" width="610" height="930" as="geometry" />
+        </mxCell>
+        <mxCell id="YH_PSnnOb5-2hyFmt0-1-3" value="Buku" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="-270" width="160" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="YH_PSnnOb5-2hyFmt0-1-4" value="id: int&lt;br&gt;&lt;br&gt;created_at: datetime&lt;br&gt;&lt;br&gt;judul: char&lt;br&gt;&lt;br&gt;penulis: char&lt;br&gt;&lt;br&gt;deskripsi: char&lt;br&gt;&lt;br&gt;tahun_terbit: int&lt;br&gt;&lt;br&gt;penerbit: char&lt;br&gt;&lt;br&gt;jumlah_halaman: int&lt;br&gt;&lt;br&gt;ISBN: int&lt;br&gt;&lt;br&gt;kategori: int(FK)&lt;br&gt;&lt;br&gt;rak: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="YH_PSnnOb5-2hyFmt0-1-3">
+          <mxGeometry y="26" width="160" height="314" as="geometry" />
+        </mxCell>
+        <mxCell id="YH_PSnnOb5-2hyFmt0-1-5" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="YH_PSnnOb5-2hyFmt0-1-3">
+          <mxGeometry y="340" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="YH_PSnnOb5-2hyFmt0-1-6" value="tampilkan_buku()&lt;br&gt;cari_buku()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="YH_PSnnOb5-2hyFmt0-1-3">
+          <mxGeometry y="348" width="160" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="YH_PSnnOb5-2hyFmt0-1-7" value="Pengunjung" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="160" width="160" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="YH_PSnnOb5-2hyFmt0-1-8" value="id: int&lt;br&gt;&lt;br&gt;nama: char&lt;br&gt;&lt;br&gt;keanggotaan: int&lt;br&gt;&lt;br&gt;tingkat: int&lt;br&gt;&lt;br&gt;jurusan: char&lt;br&gt;&lt;br&gt;kelas: int&lt;br&gt;&lt;br&gt;waktu: time&lt;br&gt;&lt;br&gt;keperluan: int&lt;br&gt;&lt;br&gt;tanggal: date" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="YH_PSnnOb5-2hyFmt0-1-7">
+          <mxGeometry y="26" width="160" height="254" as="geometry" />
+        </mxCell>
+        <mxCell id="YH_PSnnOb5-2hyFmt0-1-9" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="YH_PSnnOb5-2hyFmt0-1-7">
+          <mxGeometry y="280" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="YH_PSnnOb5-2hyFmt0-1-10" value="tampilkan()&lt;br&gt;&lt;br&gt;tambah()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="YH_PSnnOb5-2hyFmt0-1-7">
+          <mxGeometry y="288" width="160" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="YH_PSnnOb5-2hyFmt0-1-11" value="&lt;i&gt;Kategori_Buku&lt;/i&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="-190" width="160" height="144" as="geometry" />
+        </mxCell>
+        <mxCell id="YH_PSnnOb5-2hyFmt0-1-12" value="id: int&lt;br&gt;&lt;br&gt;nama: char&lt;br&gt;&lt;br&gt;keterangan: char" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="YH_PSnnOb5-2hyFmt0-1-11">
+          <mxGeometry y="26" width="160" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="YH_PSnnOb5-2hyFmt0-1-13" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="YH_PSnnOb5-2hyFmt0-1-11">
+          <mxGeometry y="110" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="YH_PSnnOb5-2hyFmt0-1-14" value="tampilkan()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="YH_PSnnOb5-2hyFmt0-1-11">
+          <mxGeometry y="118" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="YH_PSnnOb5-2hyFmt0-1-15" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=1;exitY=0.139;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.011;entryY=0.873;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="YH_PSnnOb5-2hyFmt0-1-11" target="YH_PSnnOb5-2hyFmt0-1-4">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="370" y="10" as="sourcePoint" />
+            <mxPoint x="470" y="-90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YH_PSnnOb5-2hyFmt0-1-16" value="&lt;i&gt;Keanggotaan&lt;/i&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="176" width="160" height="144" as="geometry" />
+        </mxCell>
+        <mxCell id="YH_PSnnOb5-2hyFmt0-1-17" value="id: int&lt;br&gt;&lt;br&gt;nama: char&lt;br&gt;&lt;br&gt;keanggotaan: char" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="YH_PSnnOb5-2hyFmt0-1-16">
+          <mxGeometry y="26" width="160" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="YH_PSnnOb5-2hyFmt0-1-18" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="YH_PSnnOb5-2hyFmt0-1-16">
+          <mxGeometry y="110" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="YH_PSnnOb5-2hyFmt0-1-19" value="tampilkan()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="YH_PSnnOb5-2hyFmt0-1-16">
+          <mxGeometry y="118" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="YH_PSnnOb5-2hyFmt0-1-20" value="&lt;i&gt;Keperluan&lt;/i&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="243" y="453" width="160" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="YH_PSnnOb5-2hyFmt0-1-21" value="id: int&lt;br&gt;&lt;br&gt;nama: char" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="YH_PSnnOb5-2hyFmt0-1-20">
+          <mxGeometry y="26" width="160" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="YH_PSnnOb5-2hyFmt0-1-22" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="YH_PSnnOb5-2hyFmt0-1-20">
+          <mxGeometry y="80" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="YH_PSnnOb5-2hyFmt0-1-23" value="tampilkan()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="YH_PSnnOb5-2hyFmt0-1-20">
+          <mxGeometry y="88" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="YH_PSnnOb5-2hyFmt0-1-24" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToMany;endFill=1;rounded=0;entryX=-0.004;entryY=0.284;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.139;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="YH_PSnnOb5-2hyFmt0-1-16" target="YH_PSnnOb5-2hyFmt0-1-8">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="370" y="270" as="sourcePoint" />
+            <mxPoint x="470" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YH_PSnnOb5-2hyFmt0-1-26" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmany;startArrow=ERmany;rounded=0;entryX=0;entryY=0.843;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.005;exitY=0.115;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="YH_PSnnOb5-2hyFmt0-1-20" target="YH_PSnnOb5-2hyFmt0-1-8">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="410" y="370" as="sourcePoint" />
+            <mxPoint x="470" y="170" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="400" y="413" />
+              <mxPoint x="420" y="460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
